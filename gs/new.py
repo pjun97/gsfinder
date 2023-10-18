@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
 import sys,time
 import csv
 
@@ -21,7 +22,7 @@ driver.get("http://sw.tta.or.kr/@controlby/login.jsp")
 
 #2. 로그인
 driver.find_element(By.NAME, 'id').send_keys('')
-driver.find_element(By.NAME, 'pw').send_keys('')
+driver.find_element(By.NAME, 'pw').send_keys('1')
 driver.find_element(By.XPATH, '//*[@id="boxLogin"]/input').click()
 time.sleep(1)
 driver.find_element(By.XPATH,'//*[@id="box-menu"]/ul/li[2]/dl/dd[1]/a').click()
@@ -42,7 +43,7 @@ while pg<=11:
      try:
        a = WebDriverWait(driver,1).until(EC.element_to_be_clickable((By.CSS_SELECTOR, f'#area-main > table > tbody > tr:nth-child({content}) > td.aL > a')))
        driver.set_page_load_timeout(1)
-       a.click()
+       a.click() # 페이지가 로딩되기전, 동작 수행을 하는 것을 방지하기 위한 클릭이 가능 할 때까지 1초 대기 후, 클릭하거나 뒤로가기
       
       #3-1. 인증서가 없는 업체 뽑아내기
        try:
@@ -65,7 +66,7 @@ while pg<=11:
 
           
        except:
-          driver.back()
+          driver.back() 
       
           
      except:
@@ -80,23 +81,29 @@ while pg<=11:
      content=content+1
 
 # 4-1. 첫 페이지 넘어가기
-  if pg==11:
-   if num==12:
-    driver.find_element(By.CSS_SELECTOR,f'#area-main > div.box-page > a:nth-child({num})').click()
-   pg=2
-  # 4-2. 두번째 페이지 값이 12로 고정이므로 num3 는 12로 고정 
-   num=12
-   
-   
-  else:
-     print(pg)
-     driver.find_element(By.XPATH,f'//*[@id="area-main"]/div[4]/a[{pg}]').click()
-     pg=pg+1
-# 5. 확인할 페이지 카운트
-  if  cnt==cnt2:
-    break
- 
-  cnt2=cnt2+1
+  try: 
+    if pg==11:
+      if num==12:
+        driver.find_element(By.CSS_SELECTOR,f'#area-main > div.box-page > a:nth-child({num})').click()
+      pg=2
+      # 4-2. 두번째 페이지 값이 12로 고정이므로 num3 는 12로 고정 
+      num=12
+    
+    
+    else:
+      print(pg)
+      driver.find_element(By.XPATH,f'//*[@id="area-main"]/div[4]/a[{pg}]').click()
+      pg=pg+1
+  # 5. 확인할 페이지 카운트
+    if  cnt==cnt2:
+      break
+
+    cnt2=cnt2+1
+  except:
+    time.sleep(2)
+    driver.find_element(By.XPATH,f'//*[@id="area-main"]/div[4]/a[{pg}]').click()
+    cnt2=cnt2+1
+    pg=pg+1
 
   
 
