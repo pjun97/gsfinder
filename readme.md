@@ -21,10 +21,10 @@ GS인증서가 누락된 업체를 찾아서 엑셀파일로 정리해주는 프
 
 
 
-#### [확인하고자 하는 페이지 범위 설정](https://github.com/pjun97/gsfinder/wiki/%ED%99%95%EC%9D%B8%ED%95%98%EA%B3%A0%EC%9E%90-%ED%95%98%EB%8A%94-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%94%EC%9C%84-%EC%84%A4%EC%A0%95-%EB%B0%8F-%EC%A0%80%EC%9E%A5%ED%95%A0-%EC%97%91%EC%85%80%ED%8C%8C%EC%9D%BC%EC%9D%98-%EC%9D%B4%EB%A6%84-%EC%84%A4%EC%A0%95)
+#### -[확인하고자 하는 페이지 범위 설정](https://github.com/pjun97/gsfinder/wiki/%ED%99%95%EC%9D%B8%ED%95%98%EA%B3%A0%EC%9E%90-%ED%95%98%EB%8A%94-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%94%EC%9C%84-%EC%84%A4%EC%A0%95-%EB%B0%8F-%EC%A0%80%EC%9E%A5%ED%95%A0-%EC%97%91%EC%85%80%ED%8C%8C%EC%9D%BC%EC%9D%98-%EC%9D%B4%EB%A6%84-%EC%84%A4%EC%A0%95)
 
-#### [인증서가 누락된 업체명단을 저장하는 엑셀파일의 이름 설정](https://github.com/pjun97/gsfinder/wiki/%ED%99%95%EC%9D%B8%ED%95%98%EA%B3%A0%EC%9E%90-%ED%95%98%EB%8A%94-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%94%EC%9C%84-%EC%84%A4%EC%A0%95-%EB%B0%8F-%EC%A0%80%EC%9E%A5%ED%95%A0-%EC%97%91%EC%85%80%ED%8C%8C%EC%9D%BC%EC%9D%98-%EC%9D%B4%EB%A6%84-%EC%84%A4%EC%A0%95)
+#### -[인증서가 누락된 업체명단을 저장하는 엑셀파일의 이름 설정](https://github.com/pjun97/gsfinder/wiki/%ED%99%95%EC%9D%B8%ED%95%98%EA%B3%A0%EC%9E%90-%ED%95%98%EB%8A%94-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B2%94%EC%9C%84-%EC%84%A4%EC%A0%95-%EB%B0%8F-%EC%A0%80%EC%9E%A5%ED%95%A0-%EC%97%91%EC%85%80%ED%8C%8C%EC%9D%BC%EC%9D%98-%EC%9D%B4%EB%A6%84-%EC%84%A4%EC%A0%95)
 
-#### [인증서 유무 체크 및 누락업체 크롤링](https://github.com/pjun97/gsfinder/wiki/%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%9C%A0%EB%AC%B4-%EC%B2%B4%ED%81%AC-%EB%B0%8F-%EB%88%84%EB%9D%BD%EC%97%85%EC%B2%B4-%ED%81%AC%EB%A1%A4%EB%A7%81)
+#### -[인증서 유무 체크 및 누락업체 크롤링](https://github.com/pjun97/gsfinder/wiki/%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%9C%A0%EB%AC%B4-%EC%B2%B4%ED%81%AC-%EB%B0%8F-%EB%88%84%EB%9D%BD%EC%97%85%EC%B2%B4-%ED%81%AC%EB%A1%A4%EB%A7%81)
 
-#### 페이지 이동
+#### -[페이지 이동 및 게시글 조회 기능](https://github.com/pjun97/gsfinder/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%EB%8F%99-%EA%B8%B0%EB%8A%A5)
