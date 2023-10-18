@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import sys,time
+import time
 import csv
 
 
@@ -20,8 +20,8 @@ driver.get("http://sw.tta.or.kr/@controlby/login.jsp")
 
 
 #2. 로그인
-driver.find_element(By.NAME, 'id').send_keys('gs_admin')
-driver.find_element(By.NAME, 'pw').send_keys('12sqec34%')
+driver.find_element(By.NAME, 'id').send_keys('')
+driver.find_element(By.NAME, 'pw').send_keys('')
 driver.find_element(By.XPATH, '//*[@id="boxLogin"]/input').click()
 time.sleep(1)
 driver.find_element(By.XPATH,'//*[@id="box-menu"]/ul/li[2]/dl/dd[1]/a').click()
